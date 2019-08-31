@@ -221,7 +221,6 @@ header nav ul li {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-image: url("img/unsplash.png");
     background-color:#1a2c2a;
     color: #e2e3ed;
     
