@@ -444,6 +444,13 @@ header nav ul li {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.mission-content {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .contact-section {
