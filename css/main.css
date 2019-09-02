@@ -515,10 +515,29 @@ faq .content-wrapper {
         max-width: 640px;
         margin: 100px 0;
   }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+  }
+
+  /* Header */
+  header {
+    justify-content: space-around;
+  }
+
     header .content-wrapper{
       width: 100%;
-      padding-top: 22px;
       justify-content: space-between;
+    }
+
+    header figure {
+      width: 30%;
     }
 
     header nav {
@@ -529,13 +548,14 @@ faq .content-wrapper {
       justify-content: space-between;
     }
 
-    
+    .header-divider {
+    display: none;
+  }
 
     .hero-area h1 {
-      padding-top: 90px;
-      padding-right: 180px;
-      padding-left: 65px;
-      padding-bottom: 420px;
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
     }
 
     aside .content-wrapper {
@@ -566,19 +586,12 @@ faq .content-wrapper {
       padding-right: 42px;
     }
 
-    .features {
-      flex-basis: auto;
-    }
 
     .features h2 {
-      padding-top: 100px;
-      padding-right: 60px;
-      padding-left: 60px;
+      margin: 0 20px 20px 0;
     }
 
     .features article {
-      padding-left: 120px;
-      padding-bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -596,19 +609,43 @@ faq .content-wrapper {
     justify-content: space-between;
 }
 
+.reviews h1 {
+  width: 90%;
+}
+
+.reviews article figure,{
+  width: 49%;
+}
+
+.reviews h2 {
+  width: 75%;
+  margin: 0;
+}
+
 footer .content-wrapper {
   width: 65%;
   margin: 100px 0;
 }
 
-.footer-content {
+footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 
 footer .contact {
   margin-bottom: 0;
+}
+
+
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+    line-height: 1.285;
 }
 
 footer .copyright {
@@ -633,7 +670,7 @@ footer .copyright {
     width: 40%;
 }
 
-.contact-section .content-wrapper h2 {
+.contact-section .content-wrapper h1 {
     width: 80%;
 }
 
@@ -641,6 +678,10 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.contact-content h1 {
+  font-size: 1.5em;
 }
 
 /* ==========================================================================
@@ -654,9 +695,15 @@ footer .copyright {
     flex-basis: 40%;
 }
 
-.faq h2 {
+.faq h1 {
     width: 100%;
 }
+
+.faq h2,
+.faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
       
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
@@ -664,10 +711,26 @@ footer .copyright {
     .content-wrapper {
       max-width: 960px;
  }
+ 
+    h1 {
+      font-size: 2.25em;
+}
+
+h2,
+h3 {
+    font-size: 1.875em;
+}
+
+p {
+    font-size: 1.125em;
+    line-height: 1.333;
+}
+ 
 
   /* Hero */
  .hero-area h1 {
      width: 60%;
+     font-size: 3.75em;
  }
 
  /* Aside */
@@ -680,8 +743,12 @@ footer .copyright {
      width: 30%;
  }
 
+ .form-description p {
+  font-size: 1.125em;
+}
+
  /* Features */
- .features h2 {
+ .features h1 {
      width: 70%;
  }
 
@@ -697,20 +764,24 @@ footer .copyright {
 /* ==========================================================================
 About Page
 ========================================================================== */
- .mission h2,
- .contact-section .content-wrapper h2 {
+ .mission h1,
+ .contact-section .content-wrapper h1 {
      width: 100%
+     font-size: 3em;
  }
 
  .contact-section .content-wrapper h2 {
      margin-bottom: 40px;
  }
 
+ .contact-content h2 {
+  font-size: 1.875em;
+}
 
 /* ==========================================================================
 FAQ Page
 ========================================================================== */
- .faq h2 {
+ .faq h1 {
      width: 100%;
  }
 
@@ -718,7 +789,12 @@ FAQ Page
      flex-basis: 35%;
  }
 
-
+ .faq h2,
+ .faq p {
+     font-size: 1.125em;
+     line-height: 1;
+ }
+}
 
 /* ==========================================================================
    Print styles.
