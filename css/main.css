@@ -149,6 +149,7 @@ img {
  
 figure {
         margin: 0;
+        width: 100%;
 }
  
 address {
@@ -175,14 +176,13 @@ footer {
   header {
     padding: 15px 0;
   }
-
+  
   header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
-    
   }
 
   header figure {
@@ -191,14 +191,11 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
+  }
 
   .header-divider {
     width: 100%;
     height: 0px;
-    margin: 10px 0 50px 55px;
-    background: #3a3a3a; 
-    
   }
 
   header nav {
@@ -210,7 +207,6 @@ footer {
     font-size: 1.125em;
     font-weight: 700;
     text-transform: uppercase;
-    
   }
 
   header nav ul {
@@ -219,15 +215,13 @@ footer {
     width: 100%;
   }
 
-  
-header nav ul li {
-  font-size: 1.125em;
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
-  padding-right: 20px;
-  padding-left: 40px;
-}
+  header nav ul li {
+    font-size: 1.125em;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 40px;
+  }
 
   /*--------Mobile Styles - Homepage------*/
 
@@ -236,7 +230,6 @@ header nav ul li {
     justify-content: center;
     flex-flow: row wrap;
     background-color:#1a2c2a;
-    color: #e2e3ed;
     background: url(../img/image-1.png);
     background-size: cover;
     background-position: center;
@@ -408,7 +401,7 @@ header nav ul li {
   }
   footer .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -616,38 +609,45 @@ faq .content-wrapper {
       line-height: 1.25;
   }
 
+  
+
   /* Header */
+  
   header {
     justify-content: space-around;
   }
 
-    header .content-wrapper{
-      width: 100%;
-      justify-content: space-between;
-    }
+  header .content-wrapper{
+    width: 100%;
+    justify-content: space-between;
+  }
 
-    header figure {
-      width: 30%;
-    }
+  header figure {
+    width: 30%;
+  }
 
-    header nav {
-      width: 20%;
-    }
+  header nav {
+    width: 20%;
+    padding-right: 60px;
+  }
 
-    header nav ul {
-      justify-content: space-between;
-    }
+  header nav ul {
+    justify-content: space-between;
+  }
 
-    .header-divider {
+  .header-divider {
     display: none;
   }
 
-    .hero-area h1 {
+  /******Hero******/
+  
+  .hero-area h1 {
       font-size: 3em;
       line-height: 1;
       margin: 0;
     }
 
+    
     aside .content-wrapper {
       margin: 50px 0;
       display: flex;
@@ -660,22 +660,7 @@ faq .content-wrapper {
       width: 35%;        
       margin: 0;
 
-    .form-description {
-      width: 50%;
-      padding-left: 62px;
-      padding-top: 54px;
-      padding-right: 42px;
-      padding-bottom: 72px;
-    }
-
-    .form {
-      width: 50%;
-      padding-top: 54px;
-      padding-left: 60px;
-      padding-bottom: 36px;
-      padding-right: 42px;
-    }
-
+    
 
     .features h2 {
       margin: 0 20px 20px 0;
