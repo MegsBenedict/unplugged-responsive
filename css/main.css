@@ -229,18 +229,18 @@ footer {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-color:#1a2c2a;
-    background: url(../img/image-1.png);
+    background: url(../img/hero.png);
     background-size: cover;
     background-position: center;
     min-height: 500px;
-    
   }
 
   .hero-area h1 {
     font-size: 2.25em;
     padding-left: 20px;
   }
+
+    /****aside*****/
 
   aside .content-wrapper {
     padding-top: 10px;
@@ -288,6 +288,8 @@ footer {
     text-align: center;
     text-transform: uppercase;
   }
+
+/****features*****/
 
   .features {
     background: url('../img/dark.jpg');
@@ -407,7 +409,7 @@ footer {
     margin-bottom: 0;
   }
 
-  footer social-icons p i {
+  footer .social-icons p i {
     font-size: 1.3125em; 
     padding-left: 10px;
     padding-right: 10px;
@@ -641,13 +643,15 @@ faq .content-wrapper {
 
   /******Hero******/
   
+  
   .hero-area h1 {
       font-size: 3em;
       line-height: 1;
-      margin: 0;
+      margin: 100px 150px 0 50px;
     }
 
-    
+  /*****Aside*****/
+  
     aside .content-wrapper {
       margin: 50px 0;
       display: flex;
@@ -657,13 +661,21 @@ faq .content-wrapper {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {        
-      width: 35%;        
-      margin: 0;
+      width: 35%;    
+  }
 
+  aside .form-description {
+    padding: 50px;
+  }
+
+  aside .form {
+    padding: 25px;
+  }
+      
+  /***features***/
     
-
-    .features h2 {
-      margin: 0 20px 20px 0;
+  .features h1 {
+      margin: 0 10px 20px 50px;
     }
 
     .features article {
@@ -672,11 +684,19 @@ faq .content-wrapper {
       align-items: center;
       flex-flow: column wrap;
       flex-basis: 50%;
+      padding: 0;
+      margin: 0;
     }
 
     .features .features-item-description {
       width: 50%;
-  }
+    }
+
+    .features i {
+        margin-bottom: 30px;
+      }
+    
+  /***reviews***/
 
   .reviews article div {
     width:   49%;
@@ -688,15 +708,17 @@ faq .content-wrapper {
   width: 90%;
 }
 
-.reviews article figure,{
+.reviews article figure{
   width: 49%;
 }
 
-.reviews h2 {
+.reviews h3 {
   width: 75%;
   margin: 0;
 }
 
+
+/*****Footer*****/
 footer .content-wrapper {
   width: 65%;
   margin: 100px 0;
@@ -723,6 +745,11 @@ footer p {
     line-height: 1.285;
 }
 
+footer .social{
+  padding: 0;
+  margin:0;
+}
+
 footer .copyright {
   width: 100%;
 }
@@ -736,7 +763,7 @@ footer .copyright {
    ========================================================================== */
  
    .mission-content {
-    display: flex
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -847,7 +874,7 @@ About Page
 ========================================================================== */
  .mission h1,
  .contact-section .content-wrapper h1 {
-     width: 100%
+     width: 100%;
      font-size: 3em;
  }
 
